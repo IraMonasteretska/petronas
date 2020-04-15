@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Start head -->
+<head>
+    <meta charset="utf-8" />
+    <title>Front-end</title>
+
+    <!-- SEO meta tags -->
+    <!-- <meta property="og:url" content="url" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="title" />
+        <meta property="og:description" content="description"/>
+        <meta property="og:image" content="url" />
+        <meta property="og:site_name" content="title" />
+        <meta name="twitter:card" content=summary />
+        <meta name="twitter:description" content="description"/>
+        <meta name="twitter:title" content="title" /> -->
+    <!--End SEO meta tags -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- Template Basic Images Start -->
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon-180x180.png" />
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000" />
+    <!-- Custom Browsers Color End -->
+
+
+    <style>
+        body {
+            opacity: 0;
+        }
+
+        .modal {
+            opacity: 0;
+        }
+
+        .dropdown-menu {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .select__list {
+            visibility: hidden; 
+            opacity: 0;
+        }
+
+        @media screen and (max-width: 991px) {
+
+            .header nav {
+                transform: translate3d(100%, 0, 0);
+                visibility: hidden;
+            }
+
+            /*header mega menu */
+            .header.header-mega-menu nav {
+                transform: translate3d(100%, 0, 0);
+                visibility: hidden;
+            }
+        }
+    </style>
+<link href="main.css" rel="stylesheet"></head><!-- End head -->
+
+<!-- Body Modifications -->
+<!-- fixed header: header position: fixed -->
+
+<body class="fixed-header">
+    <!-- Start site wrapper -->
+    <div class="site-wrapper">
+
+        <!-- Start header -->
+        <header class="header ">
+            <div class="container">
+                <div class="header__row">
+                    <a href="/" class="logo">
+                        <img src="img/petronas-logo.png" class="img-responsive" alt="">
+                    </a>
+                    <menu>
+                        <!-- Nav for wordpress start -->
+                        <nav data-default_back_btn_text="Menu">
+                            <a class="menu-back hidden-on-desktop">Menu</a>
+                            <ul>
+                                <li class="current_page_item menu-item-has-children">
+                                    <span> Про нас </span>
+                                    <div class="dropdown-menu-wrap">
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Про Ойл-груп</a></li>
+                                            <li><a href="##">Історія</a></li>
+                                            <li><a href="###">Про бренд</a></li>
+                                            <li><a href="###">Технології</a></li>
+                                            <li><a href="###">Спонсорство</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <span> Продукція </span>
+                                    <div class="dropdown-menu-wrap">
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Test 1</a></li>
+                                            <li><a href="##">Test 2</a></li>
+                                            <li><a href="###">Test 3</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="about.html">Магазин</a>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <span> Знайти локацію</span>
+                                    <div class="dropdown-menu-wrap">
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Test 12</a></li>
+                                            <li><a href="##">Test 22</a></li>
+                                            <li><a href="###">Test 33</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Інформаційний центр</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Контакти</a>
+                                </li>
+                            </ul>
+                            <div class="header-cab">
+                                <a href="#">
+                                    <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.2779 4.95839C13.2779 7.48969 11.2258 9.54161 8.69447 9.54161C6.16318 9.54161 4.11108 7.48969 4.11108 4.95839C4.11108 2.42709 6.16318 0.375 8.69447 0.375C11.2258 0.375 13.2779 2.42709 13.2779 4.95839Z" fill="#029C99"/>
+                                    <path d="M12.5902 11.375H4.79845C2.39774 11.375 0.444336 13.3284 0.444336 15.7291V18.9375C0.444336 19.317 0.752335 19.625 1.13184 19.625H16.2568C16.6363 19.625 16.9443 19.317 16.9443 18.9375V15.7291C16.9443 13.3284 14.9909 11.375 12.5902 11.375Z" fill="#029C99"/>
+                                    </svg>
+                                    <p>
+                                        Особистий кабінет
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="header-select">
+                                <div class="select">
+                                    <div class="select__field">
+                                        <input type="text" readonly placeholder="UA">
+                                    </div>
+                                    <ul class="select__list">
+                                        <li class="select__option">
+                                            <a href="#"> UA </a>
+                                        </li>
+                                        <li class="select__option">
+                                            <a href="#"> EN </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+        
+                        <!-- Nav for wordpress end -->
+                        <div class="burger hidden-on-desktop">
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                        </div>
+                    </menu>
+                </div>
+            </div>
+        </header>        <!-- End header -->
+
+        <!--Start page-->
+        <div class="page-wrapper">
+            <section class="section section--default">
+                <div class="container">
+                    <div class="text">
+                        <h1>Privacy Policy</h1>
+                        <h2>Privacy Policy</h2>
+                        <h3>Privacy Policy</h3>
+                        <h4>Privacy Policy</h4>
+                        <h5>Privacy Policy</h5>
+                        <h6>Privacy Policy</h6>
+                        <p>Veniam eu ad ex laborum commodo esse. Mollit non cupidatat ea consequat cupidatat eiusmod Lorem. Ad quis
+                            minim pariatur aliquip dolor.</p>
+                        <p>Veniam eu ad ex laborum commodo esse. Mollit non cupidatat ea consequat cupidatat eiusmod Lorem. Ad quis
+                            minim pariatur aliquip dolor.</p>
+                        <p>Eu quis nostrud aute ipsum labore velit. Ullamco reprehenderit fugiat sunt ipsum incididunt velit non
+                            enim excepteur deserunt mollit et nisi proident. Veniam aute esse aliqua consectetur exercitation nulla
+                            fugiat eu anim mollit dolor eu nulla adipisicing.
+                            Eu quis nostrud aute ipsum labore velit. Ullamco reprehenderit fugiat sunt ipsum incididunt velit non
+                            enim excepteur deserunt mollit et nisi proident. Veniam aute esse aliqua consectetur exercitation nulla
+                            fugiat eu anim mollit dolor eu nulla adipisicing.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--End page-->
+
+        <!-- Start footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <div>
+                        <h4>Partners</h4>
+                        <a href="#">Verlat Immo</a>
+                        <a href="#">24 Projects</a>
+                        <a href="#">YD Projects</a>
+                    </div>
+                    <div>
+                        <h4>Omgeving</h4>
+                        <a href="#">Boechout</a>
+                        <a href="#">Natuurpunt</a>
+                    </div>
+                    <div>
+                        <h4>Vremde7</h4>
+                        <a href="#">Plannen</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="footer__row footer__row--bottom">
+                    <a href="#" class="float-right fold">Crafted by FOLD.eu</a>
+                </div>
+            </div>
+        </footer>        <!-- End footer -->
+
+    </div>
+    <!-- End site wrapper -->
+<script type="text/javascript" src="bundle.js"></script></body>
+
+</html>

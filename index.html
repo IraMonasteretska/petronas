@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Start head -->
+<head>
+    <meta charset="utf-8" />
+    <title>Front-end</title>
+
+    <!-- SEO meta tags -->
+    <!-- <meta property="og:url" content="url" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="title" />
+        <meta property="og:description" content="description"/>
+        <meta property="og:image" content="url" />
+        <meta property="og:site_name" content="title" />
+        <meta name="twitter:card" content=summary />
+        <meta name="twitter:description" content="description"/>
+        <meta name="twitter:title" content="title" /> -->
+    <!--End SEO meta tags -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- Template Basic Images Start -->
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon-180x180.png" />
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000" />
+    <!-- Custom Browsers Color End -->
+
+
+    <style>
+        body {
+            opacity: 0;
+        }
+
+        .modal {
+            opacity: 0;
+        }
+
+        .dropdown-menu {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .select__list {
+            visibility: hidden; 
+            opacity: 0;
+        }
+
+        @media screen and (max-width: 991px) {
+
+            .header nav {
+                transform: translate3d(100%, 0, 0);
+                visibility: hidden;
+            }
+
+            /*header mega menu */
+            .header.header-mega-menu nav {
+                transform: translate3d(100%, 0, 0);
+                visibility: hidden;
+            }
+        }
+    </style>
+<link href="main.css" rel="stylesheet"></head><!-- End head -->
+
+<!-- Body Modifications -->
+<!-- fixed header: header position: fixed -->
+
+<body class="fixed-header">
+<!-- Start site wrapper -->
+<div class="site-wrapper">
+
+    <!-- Start header -->
+    <header class="header dark-theme">
+        <div class="container">
+            <div class="header__row">
+                <a href="/" class="logo">
+                    <img src="img/petronas-logo.png" class="img-responsive" alt="">
+                </a>
+                <menu>
+                    <!-- Nav for wordpress start -->
+                    <nav data-default_back_btn_text="Menu">
+                        <a class="menu-back hidden-on-desktop">Menu</a>
+                        <ul>
+                            <li class="current_page_item menu-item-has-children">
+                                <span> Про нас </span>
+                                <div class="dropdown-menu-wrap">
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Про Ойл-груп</a></li>
+                                        <li><a href="##">Історія</a></li>
+                                        <li><a href="###">Про бренд</a></li>
+                                        <li><a href="###">Технології</a></li>
+                                        <li><a href="###">Спонсорство</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <span> Продукція </span>
+                                <div class="dropdown-menu-wrap">
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Test 1</a></li>
+                                        <li><a href="##">Test 2</a></li>
+                                        <li><a href="###">Test 3</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="about.html">Магазин</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <span> Знайти локацію</span>
+                                <div class="dropdown-menu-wrap">
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Test 12</a></li>
+                                        <li><a href="##">Test 22</a></li>
+                                        <li><a href="###">Test 33</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="contact.html">Інформаційний центр</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Контакти</a>
+                            </li>
+                        </ul>
+                        <div class="header-cab">
+                            <a href="#">
+                                <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.2779 4.95839C13.2779 7.48969 11.2258 9.54161 8.69447 9.54161C6.16318 9.54161 4.11108 7.48969 4.11108 4.95839C4.11108 2.42709 6.16318 0.375 8.69447 0.375C11.2258 0.375 13.2779 2.42709 13.2779 4.95839Z" fill="#029C99"/>
+                                <path d="M12.5902 11.375H4.79845C2.39774 11.375 0.444336 13.3284 0.444336 15.7291V18.9375C0.444336 19.317 0.752335 19.625 1.13184 19.625H16.2568C16.6363 19.625 16.9443 19.317 16.9443 18.9375V15.7291C16.9443 13.3284 14.9909 11.375 12.5902 11.375Z" fill="#029C99"/>
+                                </svg>
+                                <p>
+                                    Особистий кабінет
+                                </p>
+                            </a>
+                        </div>
+                        <div class="header-select">
+                            <div class="select">
+                                <div class="select__field">
+                                    <input type="text" readonly placeholder="UA">
+                                </div>
+                                <ul class="select__list">
+                                    <li class="select__option">
+                                        <a href="#"> UA </a>
+                                    </li>
+                                    <li class="select__option">
+                                        <a href="#"> EN </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+    
+                    <!-- Nav for wordpress end -->
+                    <div class="burger hidden-on-desktop">
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+                    </div>
+                </menu>
+            </div>
+        </div>
+    </header>    <!-- End header -->
+
+    <!--Start page-->
+    <div class="page-wrapper page-home dark-theme">
+
+        <!-- Start introduction -->
+        <!-- Start introduction section -->
+        <section id="introduction" class="section introduction ">
+          <div class="container">
+            <div class="row">
+              <div class="i-slider-wrap">
+        
+                <div class="introduction__slider i-slider">
+                  <div class="i-slider__item">
+                    <video width="100%" height="100%" loop muted preload="metadata">
+                      <source src="video/intro.mp4" type="video/mp4">
+                    </video>
+        
+                    <div class="video-control">
+        
+                    </div>
+                  </div>
+                  <div class="i-slider__item">
+                    <img src="img/test-1x.png" data-src="img/test-1x.png" alt="">
+                  </div>
+                  <div class="i-slider__item">
+                    <img src="img/test-1x.png" data-src="img/test-1x.png" alt="">
+                  </div>
+                </div>
+              </div>
+        
+              <div class="introduction__search i-search">
+                <div class="i-search__head">
+                  <svg width="33" height="47" viewBox="0 0 33 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.4684 14.1219L21.1152 17.3431C21.3126 17.4256 21.5037 17.5203 21.6851 17.6252L22.4109 16.3681C22.1788 16.2338 21.9325 16.1119 21.6787 16.0052L14.0315 12.7841C13.7615 12.6703 13.4769 12.6129 13.1845 12.6129H11.8867V14.0645H13.1845C13.2823 14.0645 13.3777 14.0833 13.4684 14.1219Z" fill="#029C99" stroke="#029C99" stroke-width="0.1"/>
+                  <path d="M8.98438 12.6129H10.436V14.0645H8.98438V12.6129Z" fill="#029C99" stroke="#029C99" stroke-width="0.1"/>
+                  <path d="M22.8061 13.3284L15.1561 10.1073C15.0356 10.0566 14.9129 10.0152 14.7903 9.97477V8.12446C15.6331 7.82393 16.2419 7.02547 16.2419 6.08065V3.17742C16.2419 1.97707 15.2649 1 14.0645 1H5.35484C4.15449 1 3.17742 1.97707 3.17742 3.17742V6.08065C3.17742 7.02547 3.78627 7.82393 4.62903 8.12446V10.5344C4.2073 10.8087 3.82207 11.1418 3.49177 11.538L2.17731 13.1144C1.41819 14.0252 1 15.1809 1 16.3667V40.9194C1 43.7202 3.27984 46 6.08065 46H23.5C26.3008 46 28.5806 43.7202 28.5806 40.9194V22.025C28.5806 18.2191 26.3139 14.8056 22.8061 13.3284ZM4.62903 3.17742C4.62903 2.77695 4.95437 2.45161 5.35484 2.45161H6.08065V5.35484H7.53226V2.45161H8.98387V5.35484H10.4355V2.45161H11.8871V5.35484H13.3387V2.45161H14.0645C14.465 2.45161 14.7903 2.77695 14.7903 3.17742V6.08065C14.7903 6.48111 14.465 6.80645 14.0645 6.80645H5.35484C4.95437 6.80645 4.62903 6.48111 4.62903 6.08065V3.17742ZM6.08065 8.25806H13.3387V9.71677C13.2873 9.71535 13.2363 9.70968 13.1849 9.70968H7.3944C6.94431 9.70968 6.5045 9.7756 6.07994 9.889V8.25806H6.08065ZM3.29295 14.0443L4.60741 12.4669C5.29813 11.6372 6.31419 11.1613 7.39511 11.1613H13.1856C13.6718 11.1613 14.145 11.257 14.5936 11.4459L22.2437 14.667C24.0291 15.4183 25.4308 16.7661 26.2668 18.4194H2.45161V16.3667C2.45161 15.5197 2.75002 14.6946 3.29295 14.0443ZM27.129 40.9194C27.129 42.9203 25.5009 44.5484 23.5 44.5484H6.08065C4.07972 44.5484 2.45161 42.9203 2.45161 40.9194V19.871H26.8299C27.0231 20.5613 27.129 21.2832 27.129 22.025V40.9194Z" fill="#029C99" stroke="#029C99" stroke-width="0.1"/>
+                  <path d="M23.4991 21.3226H6.07976C4.87942 21.3226 3.90234 22.2997 3.90234 23.5001V40.9194C3.90234 42.1198 4.87942 43.0968 6.07976 43.0968H23.4991C24.6995 43.0968 25.6765 42.1198 25.6765 40.9194V23.5001C25.6765 22.2997 24.6995 21.3226 23.4991 21.3226ZM24.2249 40.9194C24.2249 41.3199 23.8996 41.6452 23.4991 41.6452H6.07976C5.67929 41.6452 5.35396 41.3199 5.35396 40.9194V23.5001C5.35396 23.0996 5.67929 22.7742 6.07976 22.7742H23.4991C23.8996 22.7742 24.2249 23.0996 24.2249 23.5001V40.9194Z" fill="#029C99" stroke="#029C99" stroke-width="0.1"/>
+                  <path d="M14.7905 24.2258C10.3885 24.2258 6.80664 27.8077 6.80664 32.2097C6.80664 36.6117 10.3885 40.1936 14.7905 40.1936C19.1925 40.1936 22.7744 36.6117 22.7744 32.2097C22.7744 27.8077 19.1925 24.2258 14.7905 24.2258ZM14.7905 38.742C11.1884 38.742 8.25825 35.8118 8.25825 32.2097C8.25825 28.6076 11.1884 25.6774 14.7905 25.6774C18.3926 25.6774 21.3228 28.6076 21.3228 32.2097C21.3228 35.8118 18.3926 38.742 14.7905 38.742Z" fill="#029C99" stroke="#029C99" stroke-width="0.1"/>
+                  <path d="M14.7911 26.3915L11.6352 31.9133C11.3262 32.4563 11.1621 33.0726 11.1621 33.6967C11.1621 35.6781 12.7743 37.2903 14.8266 37.2903C16.808 37.2903 18.4202 35.6781 18.4202 33.6967C18.4202 33.0733 18.2561 32.4563 17.9471 31.9141L14.7911 26.3915ZM14.7557 35.8387C13.5748 35.8387 12.6137 34.8775 12.6137 33.6967C12.6137 33.3246 12.7115 32.957 12.8962 32.6342L14.7911 29.3181L16.6861 32.6342C16.8707 32.957 16.9686 33.3246 16.9686 33.6967C16.9686 34.8775 16.0074 35.8387 14.7557 35.8387Z" fill="#029C99" stroke="#029C99" stroke-width="0.1"/>
+                  <path d="M8.25825 24.9516C8.25825 25.3525 7.93327 25.6774 7.53245 25.6774C7.13162 25.6774 6.80664 25.3525 6.80664 24.9516C6.80664 24.5508 7.13162 24.2258 7.53245 24.2258C7.93327 24.2258 8.25825 24.5508 8.25825 24.9516Z" fill="#029C99" stroke="#029C99" stroke-width="0.1"/>
+                  <path d="M22.7739 24.9516C22.7739 25.3525 22.4489 25.6774 22.0481 25.6774C21.6472 25.6774 21.3223 25.3525 21.3223 24.9516C21.3223 24.5508 21.6472 24.2258 22.0481 24.2258C22.4489 24.2258 22.7739 24.5508 22.7739 24.9516Z" fill="#029C99" stroke="#029C99" stroke-width="0.1"/>
+                  <path d="M8.25825 39.4678C8.25825 39.8686 7.93327 40.1936 7.53245 40.1936C7.13162 40.1936 6.80664 39.8686 6.80664 39.4678C6.80664 39.0669 7.13162 38.7419 7.53245 38.7419C7.93327 38.7419 8.25825 39.0669 8.25825 39.4678Z" fill="#029C99" stroke="#029C99" stroke-width="0.1"/>
+                  <path d="M22.7739 39.4678C22.7739 39.8686 22.4489 40.1936 22.0481 40.1936C21.6472 40.1936 21.3223 39.8686 21.3223 39.4678C21.3223 39.0669 21.6472 38.7419 22.0481 38.7419C22.4489 38.7419 22.7739 39.0669 22.7739 39.4678Z" fill="#029C99" stroke="#029C99" stroke-width="0.1"/>
+                  <path d="M29.4999 4.54307L29.4999 4.54305C29.4598 4.49175 29.3797 4.44747 29.2707 4.44747C29.1618 4.44747 29.0817 4.49175 29.0416 4.54305L29.0416 4.54307C28.7831 4.87413 28.2346 5.60211 27.753 6.40359C27.5122 6.80446 27.2938 7.21436 27.137 7.59555C26.9769 7.98464 26.8972 8.30545 26.8972 8.53949L29.4999 4.54307ZM29.4999 4.54307C29.7584 4.87413 30.3069 5.60211 30.7885 6.40359C31.0293 6.80446 31.2477 7.21436 31.4045 7.59555C31.5646 7.98472 31.6443 8.30557 31.6443 8.53963C31.6443 9.84806 30.5788 10.9132 29.2707 10.9132M29.4999 4.54307L29.2707 10.9132M29.2707 10.9132C27.9628 10.9132 26.8976 9.84824 26.8972 8.53963L29.2707 10.9132ZM29.681 5.77417L29.2707 5.18055L28.8604 5.77425C28.5036 6.29061 28.1696 6.8264 27.9224 7.29125C27.799 7.5232 27.6931 7.74526 27.6167 7.94328C27.5458 8.12714 27.4796 8.3416 27.4796 8.53963C27.4796 9.52762 28.283 10.3313 29.2707 10.3313C30.2589 10.3313 31.0624 9.52774 31.0624 8.53963C31.0624 8.34142 30.9961 8.12685 30.9251 7.94281C30.8487 7.74467 30.7427 7.52256 30.6193 7.29063C30.3719 6.82582 30.0378 6.29025 29.681 5.77417Z" fill="#029C99" stroke="#029C99" stroke-width="0.997486"/>
+                  <path d="M22.3925 0.594316L22.3925 0.594338C22.651 0.925403 23.1995 1.65338 23.681 2.45486C23.9219 2.85573 24.1402 3.26563 24.2971 3.64682C24.4572 4.036 24.5369 4.35685 24.5369 4.59091C24.5369 5.89934 23.4714 6.96447 22.1633 6.96447C20.8552 6.96447 19.7898 5.89934 19.7898 4.59091C19.7898 4.35685 19.8695 4.036 20.0296 3.64682C20.1864 3.26563 20.4048 2.85573 20.6456 2.45486C21.1271 1.65338 21.6757 0.925403 21.9342 0.594337L21.9342 0.594316C21.9742 0.543019 22.0544 0.498743 22.1633 0.498743C22.2723 0.498743 22.3524 0.543019 22.3925 0.594316ZM22.5742 1.8252L22.1638 1.23091L21.7534 1.82516C21.3967 2.34166 21.0625 2.87753 20.8152 3.3424C20.6918 3.57436 20.5858 3.79643 20.5094 3.99446C20.4385 4.1783 20.3721 4.39281 20.3721 4.59091C20.3721 5.57901 21.1757 6.38255 22.1638 6.38255C23.152 6.38255 23.955 5.57935 23.955 4.59091C23.955 4.39269 23.8887 4.17813 23.8177 3.9941C23.7413 3.79596 23.6354 3.57385 23.512 3.34192C23.2647 2.87708 22.9307 2.34144 22.5742 1.8252Z" fill="#029C99" stroke="#029C99" stroke-width="0.997486"/>
+                  </svg>
+                  <h3>ОБЕРИ НЕ МАСТИЛО, ОБЕРИ МОЖЛИВОСТІ </h3>
+                  <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0)">
+                  <path d="M2.90234 28.3065H11.612V23.9517H2.90234V28.3065ZM4.35396 25.4033H10.1604V26.8549H4.35396V25.4033Z" fill="#029C99" stroke="#029C99" stroke-width="0.1"/>
+                  <path d="M42.0964 23.9517H33.3867V28.3065H42.0964V23.9517ZM40.6448 26.8549H34.8383V25.4033H40.6448V26.8549Z" fill="#029C99" stroke="#029C99" stroke-width="0.1"/>
+                  <path d="M43.5484 16.6936C44.3482 16.6936 45 16.0418 45 15.242V13.7904C45 12.9898 44.3482 12.3388 43.5484 12.3388H41.371C40.5704 12.3388 39.9194 12.9898 39.9194 13.7904V15.242V16.3198L39.8279 16.2545L37.5663 7.77416C37.1439 6.18827 35.701 5.08069 34.0599 5.08069H10.9401C9.29831 5.08069 7.85613 6.18827 7.43371 7.77488L5.1721 16.2552L5.08065 16.3198V15.242V13.7904C5.08065 12.9898 4.42887 12.3388 3.62903 12.3388H1.45161C0.651774 12.3388 0 12.9898 0 13.7904V15.242C0 16.0418 0.651774 16.6936 1.45161 16.6936H3.62903V17.357L1.51984 18.8638C0.567581 19.5438 0 20.6478 0 21.8171V30.4839L0.533468 33.745C0.680081 34.6275 1.33984 35.3011 2.17742 35.4992V37.742C2.17742 38.9425 3.15435 39.9194 4.35484 39.9194H7.25806C8.45855 39.9194 9.43548 38.9425 9.43548 37.742V35.5646H35.5645V37.742C35.5645 38.9425 36.5415 39.9194 37.7419 39.9194H40.6452C41.8456 39.9194 42.8226 38.9425 42.8226 37.742V35.4992C43.6602 35.3011 44.3199 34.6275 44.4665 33.745L44.9906 30.6029L45 21.8171C45 20.6485 44.4324 19.5438 43.4802 18.8645L41.371 17.357V16.6936H43.5484ZM41.371 13.7904H43.5484V15.242H41.371V13.7904ZM8.83597 8.14867C9.08927 7.19714 9.95516 6.5323 10.9401 6.5323H34.0599C35.0448 6.5323 35.9107 7.19714 36.164 8.14867L38.2486 15.9678H6.75145L8.83597 8.14867ZM27.5806 28.3065V29.7581H26.129V22.5H27.5806V26.8549H29.0323V22.5H30.4839V29.7581H29.0323V28.3065H27.5806ZM24.6774 21.0484V20.3226C24.6774 19.1221 23.7005 18.1452 22.5 18.1452C21.2995 18.1452 20.3226 19.1221 20.3226 20.3226V21.0484H13.987L7.76613 17.4194H37.2339L31.013 21.0484H24.6774ZM23.2258 22.5H24.6774V29.7581H23.2258V22.5ZM21.7742 21.0484V20.3226C21.7742 19.922 22.0994 19.5968 22.5 19.5968C22.9006 19.5968 23.2258 19.922 23.2258 20.3226V21.0484H21.7742ZM21.7742 22.5V29.7581H20.3226V22.5H21.7742ZM15.9677 25.4033V29.7581H14.5161V22.5H15.9677V23.9517H17.4194V22.5H18.871V29.7581H17.4194V25.4033H15.9677ZM1.45161 15.242V13.7904H3.62903V15.242H1.45161ZM2.36323 20.0446L5.51976 17.7903L10.821 20.8822L1.98363 20.3916C2.0954 20.2631 2.22169 20.1455 2.36323 20.0446ZM1.45161 21.8171C1.45161 21.8163 1.45161 21.8163 1.45161 21.8163L13.0645 22.4608V29.7581H1.45161V21.8171ZM7.98387 37.742C7.98387 38.1426 7.65871 38.4678 7.25806 38.4678H4.35484C3.95419 38.4678 3.62903 38.1426 3.62903 37.742V35.5646H7.98387V37.742ZM41.371 37.742C41.371 38.1426 41.0458 38.4678 40.6452 38.4678H37.7419C37.3413 38.4678 37.0161 38.1426 37.0161 37.742V35.5646H41.371V37.742ZM43.0345 33.5069C42.9765 33.8575 42.6752 34.1129 42.3189 34.1129H2.68113C2.32476 34.1129 2.02355 33.8575 1.96548 33.5069L1.58226 31.2097H43.4177L43.0345 33.5069ZM43.5484 21.8156C43.5484 21.8156 43.5484 21.8163 43.5484 21.8171V29.7581H31.9355V22.4608L43.5484 21.8156ZM42.6368 20.0446C42.7783 20.1455 42.9046 20.2624 43.0164 20.3916L34.1797 20.8822L39.481 17.7903L42.6368 20.0446Z" fill="#029C99" stroke="#029C99" stroke-width="0.1"/>
+                  <path d="M19.8084 7.47087L14.002 13.2773L15.0284 14.3038L20.8349 8.49731L19.8084 7.47087Z" fill="#029C99" stroke="#029C99" stroke-width="0.1"/>
+                  <path d="M20.2372 11.3957L21.2637 12.4221L25.1902 8.49555L24.1638 7.46912L20.2372 11.3957Z" fill="#029C99" stroke="#029C99" stroke-width="0.1"/>
+                  <path d="M18.3583 13.2775L19.3848 14.304L20.3666 13.3222L19.3401 12.2957L18.3583 13.2775Z" fill="#029C99" stroke="#029C99" stroke-width="0.1"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0">
+                  <rect width="45" height="45" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+                </div>
+                <div class="i-search__row">
+                  <form class="i-search-form" action="">
+                    <div class="dropdown">
+                    
+                      <div class="select">
+                        <div class="input-wrapper input-wrapper--select input-effect">
+                          <input class="effect-16" type="text" placeholder="" name="search_oil" id="search_oil" readonly>
+                          <label for="search_oil">Пошук за типОМ маСТила</label>
+                          <button type="submit"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.8535 22.4395L16.8817 15.4677C18.204 13.8351 19 11.7597 19 9.50003C19 4.26174 14.7383 0 9.49999 0C4.2617 0 0 4.26174 0 9.50003C0 14.7383 4.26174 19.0001 9.50004 19.0001C11.7597 19.0001 13.8351 18.204 15.4677 16.8817L22.4395 23.8536C22.6348 24.0488 22.9513 24.0488 23.1466 23.8536L23.8536 23.1466C24.0488 22.9513 24.0488 22.6347 23.8535 22.4395ZM9.50004 17C5.36429 17 2.00002 13.6358 2.00002 9.50003C2.00002 5.36429 5.36429 2.00002 9.50004 2.00002C13.6358 2.00002 17 5.36429 17 9.50003C17 13.6358 13.6358 17 9.50004 17Z" fill="#FDFDFD"/>
+                    </svg>
+                    </button>
+                        </div>
+                        <ul class="select__list">
+                          <li class="select__option">1</li>
+                          <li class="select__option">2</li>
+                          <li class="select__option">3</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </form>
+                  <p>або</p>
+                  <form class="i-search-form" action="">
+                    <div class="dropdown">
+                    
+                      <div class="select">
+                        <div class="input-wrapper input-wrapper--select input-effect">
+                          <input class="effect-16" type="text" placeholder="" name="search_transport" id="search_transport" readonly>
+                          <label for="search_transport">Пошук ЗА типОМ транСПОРТУ</label>
+                          <button type="submit"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.8535 22.4395L16.8817 15.4677C18.204 13.8351 19 11.7597 19 9.50003C19 4.26174 14.7383 0 9.49999 0C4.2617 0 0 4.26174 0 9.50003C0 14.7383 4.26174 19.0001 9.50004 19.0001C11.7597 19.0001 13.8351 18.204 15.4677 16.8817L22.4395 23.8536C22.6348 24.0488 22.9513 24.0488 23.1466 23.8536L23.8536 23.1466C24.0488 22.9513 24.0488 22.6347 23.8535 22.4395ZM9.50004 17C5.36429 17 2.00002 13.6358 2.00002 9.50003C2.00002 5.36429 5.36429 2.00002 9.50004 2.00002C13.6358 2.00002 17 5.36429 17 9.50003C17 13.6358 13.6358 17 9.50004 17Z" fill="#FDFDFD"/>
+                    </svg>
+                    </button>
+                        </div>
+                        <ul class="select__list">
+                          <li class="select__option">1</li>
+                          <li class="select__option">2</li>
+                          <li class="select__option">3</li>
+                        </ul>
+                      </div>
+                    </div>            <button type="submit"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M23.8535 22.4395L16.8817 15.4677C18.204 13.8351 19 11.7597 19 9.50003C19 4.26174 14.7383 0 9.49999 0C4.2617 0 0 4.26174 0 9.50003C0 14.7383 4.26174 19.0001 9.50004 19.0001C11.7597 19.0001 13.8351 18.204 15.4677 16.8817L22.4395 23.8536C22.6348 24.0488 22.9513 24.0488 23.1466 23.8536L23.8536 23.1466C24.0488 22.9513 24.0488 22.6347 23.8535 22.4395ZM9.50004 17C5.36429 17 2.00002 13.6358 2.00002 9.50003C2.00002 5.36429 5.36429 2.00002 9.50004 2.00002C13.6358 2.00002 17 5.36429 17 9.50003C17 13.6358 13.6358 17 9.50004 17Z" fill="#FDFDFD"/>
+        </svg>
+        </button>
+                  </form>
+                </div>
+        
+              </div>
+        
+        
+            </div>
+          </div>
+        
+          <div class="controls">
+            <button class="controls__prev">
+            </button>
+            <button class="controls__next">
+            </button>
+          </div>
+        
+        </section>
+        <!-- End introduction section -->        <!-- End introduction -->
+
+        <!-- Start descr -->
+        <!-- Start name section -->
+        <section class="section descr " id="descr">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-3 descr-img">
+                <img src="img/s-intro.png" alt="">
+              </div>
+              <div class="col-12 col-xl-9 no-padding-r">
+        
+                <ul class="nav nav-tabs d-tabs" id="myTab" role="tablist">
+                  <li class="nav-item d-tab">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                      aria-selected="true">ХАРАКТЕРИСТИКИ</a>
+                  </li>
+                  <li class="d-tabs__div">&nbsp;</li>
+                  <li class="nav-item d-tab">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                      aria-selected="false">ДИЗАЙН</a>
+                  </li>
+                </ul>
+        
+                <div class="tab-content" id="myTabContent">
+        
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="descr__slider">
+                      <div class="d-title-prev">&nbsp;</div>
+                      <div class="d-title-next">&nbsp;</div>
+                      <div class="d-slider">
+        
+                        <div class="d-slider__item">
+        
+                          <div class="ds-descr">
+                            <h3 class="title">ЯКІСТЬ</h3>
+                            <p>Деталей двигуна відстабільність властивостей мастил</p>
+                          </div>
+        
+                          <div class="ds-picture">
+        
+                          </div>
+        
+                        </div>
+        
+                        <div class="d-slider__item">
+        
+                          <div class="ds-descr">
+                            <h3 class="title">ЗАХИСТ</h3>
+                            <p>Деталей двигуна від зношування & висока надійність, а також стабільність властивостей мастил</p>
+                            <p>Деталей двигуна від зношування & висока надійність, а також стабільність властивостей мастил</p>
+                          </div>
+        
+                          <div class="ds-picture">
+                            <img src="img/s-1.png" alt="">
+                          </div>
+        
+                        </div>
+                        <div class="d-slider__item">
+        
+                          <div class="ds-descr">
+                            <h3 class="title">ЧИСТОТА</h3>
+                            <p>Деталей двигуна від зношування & висока надійність, а також стабільність властивостей мастил</p>
+                          </div>
+        
+                          <div class="ds-picture">
+                            <img src="img/s-1.png" alt="">
+                          </div>
+        
+                        </div>
+                        <div class="d-slider__item">
+        
+                          <div class="ds-descr">
+                            <h3 class="title">ЧИСТОТА</h3>
+                            <p>Деталей двигуна від зношування & висока надійність, а також стабільність властивостей мастил</p>
+                          </div>
+        
+                          <div class="ds-picture">
+                            <img src="img/s-1.png" alt="">
+                          </div>
+        
+                        </div>
+                        <div class="d-slider__item">
+        
+                          <div class="ds-descr">
+                            <h3 class="title">ЧИСТОТА</h3>
+                            <p>Деталей двигуна від зношування & висока надійність, а також стабільність властивостей мастил</p>
+                          </div>
+        
+                          <div class="ds-picture">
+                            <img src="img/s-1.png" alt="">
+                          </div>
+        
+                        </div>
+        
+                      </div>
+        
+                      <div class="controls">
+                        <button class="controls__prev">
+                        </button>
+                        <button class="controls__next">
+                        </button>
+                      </div>
+        
+        
+                    </div>
+                  </div>
+        
+                  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        
+                    <div class="descr__slider">
+                      <div class="d-title-prev">&nbsp;</div>
+                      <div class="d-title-next">&nbsp;</div>
+                      <div class="d-slider">
+        
+                        <div class="d-slider__item">
+        
+                          <div class="ds-descr">
+                            <h3 class="title">ЯКІСТЬ</h3>
+                            <p>Деталей двигуна від зношування & висока надійність, а також стабільність властивостей мастил</p>
+                          </div>
+        
+                          <div class="ds-picture">
+                            <img src="img/s-1.png" alt="">
+                          </div>
+        
+                        </div>
+                        <div class="d-slider__item">
+        
+                          <div class="ds-descr">
+                            <h3 class="title">ЗАХИСТ</h3>
+                            <p>Деталей двигуна від зношування & висока надійність, а також стабільність властивостей мастил</p>
+                          </div>
+        
+                          <div class="ds-picture">
+                            <img src="img/s-1.png" alt="">
+                          </div>
+        
+                        </div>
+                        <div class="d-slider__item">
+        
+                          <div class="ds-descr">
+                            <h3 class="title">ЧИСТОТА</h3>
+                            <p>Деталей двигуна від зношування & висока надійність, а також стабільність властивостей мастил</p>
+                          </div>
+        
+                          <div class="ds-picture">
+                            <img src="img/s-1.png" alt="">
+                          </div>
+        
+                        </div>
+                        <div class="d-slider__item">
+        
+                          <div class="ds-descr">
+                            <h3 class="title">ЧИСТОТА</h3>
+                            <p>Деталей двигуна від зношування & висока надійність, а також стабільність властивостей мастил</p>
+                          </div>
+        
+                          <div class="ds-picture">
+                            <img src="img/s-1.png" alt="">
+                          </div>
+        
+                        </div>
+                        <div class="d-slider__item">
+        
+                          <div class="ds-descr">
+                            <h3 class="title">ЧИСТОТА</h3>
+                            <p>Деталей двигуна від зношування & висока надійність, а також стабільність властивостей мастил</p>
+                          </div>
+        
+                          <div class="ds-picture">
+                            <img src="img/s-1.png" alt="">
+                          </div>
+        
+                        </div>
+        
+                      </div>
+        
+                      <div class="controls">
+                        <button class="controls__prev">
+                        </button>
+                        <button class="controls__next">
+                        </button>
+                      </div>
+        
+                    </div>
+        
+                  </div>
+        
+                </div>
+        
+        
+              </div>
+            </div>
+          </div>
+        
+        </section>
+        <!-- End name section -->        <!-- End descr -->
+
+        <!-- Start descr -->
+        <!-- Start section-video section -->
+        <section id="home-video" class="section s-video ">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="s-video__video">
+        
+                <video width="100%" height="100%" loop muted preload="metadata" autoplay="autoplay">
+                  <source src="video/intro.mp4" type="video/mp4">
+                </video>
+        
+              </div>
+        
+              <div class="col-12 col-xl-5 col-xxl-6 col-fh-5 no-padding">
+                <ul class="nav nav-tabs " id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="we-in-num-tab" data-toggle="tab" href="#we-in-num" role="tab"
+                      aria-controls="we-in-num" aria-selected="true">Ми в цифрах</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" id="our-partner-tab" data-toggle="tab" href="#our-partner" role="tab"
+                      aria-controls="our-partner" aria-selected="false">Наші партнери</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-none col-xl-4 col-xxl-3 col-fh-4 border-r">
+                &nbsp;
+              </div>
+            </div>
+        
+            <div class="tab-content" id="myTabContent">
+        
+        
+              <div class="tab-pane fade show active" id="we-in-num" role="tabpanel" aria-labelledby="we-in-num-tab">
+        
+                <div class="row">
+                  <div class="col-12 col-lg-6 col-xl-5 col-xxl-6 col-fh-5 border-r d-flex align-item-center">
+                    <div class="we-num-map">
+                      <div class="we-num-map__picture">
+                        <img src="img/map.png" alt="">
+                      </div>
+                      <div class="we-num-map__descr">
+                        <p>
+                          Заводи з виготовлення мастила Petronas розміщені в 7 країнах, а продукція продається ще в 43
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-3 col-xl-4  col-xxl-3 col-fh-4  border-r border-t we-num-info-wrap">
+                    <div class="we-num-info">
+                      <div class="we-num-info__num">
+                        20+
+                      </div>
+                      <div class="we-num-info__descr">
+                        <p>нових технологій у виготовленні моторних, трансмійсійних та гідравлічних МАСТИЛ</p>
+                      </div>
+                    </div>
+                    <div class="we-num-info border-t">
+                      <div class="we-num-info__num">
+                        46
+                      </div>
+                      <div class="we-num-info__descr">
+                        <p>років на ринку</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-3 col-xl-3 col-xxl-3 col-fh-3  border-t we-num-info-wrap">
+                    <div class="we-num-info">
+                      <div class="we-num-info__num">
+                        2 млн
+                      </div>
+                      <div class="we-num-info__descr">
+                        <p>торгових операцій в день</p>
+                      </div>
+                    </div>
+                    <div class="we-num-info border-t">
+                      <div class="we-num-info__num">
+                        100%
+                      </div>
+                      <div class="we-num-info__descr">
+                        <p>гарантій якості</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="tab-pane fade" id="our-partner" role="tabpanel" aria-labelledby="our-partner-tab">
+                <div class="row">
+                  <div class="col-12 col-lg-6 col-xl-5 col-xxl-6 col-fh-5 border-r">
+                    <div class="partner-text">
+                      <p>
+                        ПАРТНЕРСТВО З ЛІДЕРАМИ ЗІ СВІТОВИМИ ЛІДЕРАМИ У СФЕРІ ВИДУБУВАННЯ, ПЕРЕРОБКИ ТА ЕКСПЛУАТАЦІЇ НАФТИ І ГАЗУ
+                        ДАЛО Компанії PETRONAS неоціненнний досвід та модель розвитку (текст-зразок)
+                      </p>
+                      <p>
+                        ПАРТНЕРСТВО З ЛІДЕРАМИ ЗІ СВІТОВИМИ ЛІДЕРАМИ У СФЕРІ ВИДУБУВАННЯ, ПЕРЕРОБКИ ТА ЕКСПЛУАТАЦІЇ НАФТИ І ГАЗУ
+                        ДАЛО Компанії PETRONAS неоціненнний досвід та модель розвитку (текст-зразок)
+                      </p>
+                      <p>ПАРТНЕРСТВО З ЛІДЕРАМИ ЗІ СВІТОВИМИ ЛІДЕРАМИ У СФЕРІ ВИДУБУВАННЯ, ПЕРЕРОБКИ ТА ЕКСПЛУАТАЦІЇ НАФТИ І
+                        ГАЗУ
+                        ДАЛО Компанії PETRONAS неоціненнний досвід та модель розвитку. А також ПАРТНЕРСТВО З ЛІДЕРАМИ ЗІ
+                        СВІТОВИМИ
+                        ЛІДЕРАМИ У СФЕРІ ВИДУБУВАННЯ, ПЕРЕРОБКИ ТА ЕКСПЛУАТАЦІЇ НАФТИ І ГАЗУ ДАЛО Компанії PETRONAS неоціненнний
+                        досвід та модель розвитку
+                        <br>
+                        (текст-зразок)
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-3 col-xl-4  col-xxl-3 col-fh-4 border-t border-r partner-info-wrap">
+                    <div class="partner-info">
+                      <div class="partner-info__icon">
+                        <img src="img/japex.png" alt="">
+                      </div>
+                      <div class="partner-info__descr">
+                        <p>Japan Petroleum Exploration Company Limited</p>
+                      </div>
+                    </div>
+                    <div class="partner-info border-t">
+                      <div class="partner-info__icon">
+                        <img src="img/boc2.png" alt="">
+                      </div>
+                      <div class="partner-info__descr">
+                        <p>Basra Oil Company</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-3 col-xl-3 col-xxl-3 col-fh-3  border-t partner-info-wrap">
+                    <div class="partner-info">
+                      <div class="partner-info__icon">
+                        <img src="img/japex.png" alt="">
+                      </div>
+                      <div class="partner-info__descr">
+                        <p>Japan Petroleum Exploration Company Limited</p>
+                      </div>
+                    </div>
+                    <div class="partner-info border-t">
+                     <a href="#" class="btn">більше про нас</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+        </section>
+        <!-- End section-video section -->        <!-- End descr -->
+
+        <!-- Start news -->
+        
+        <!-- Start name section -->
+        <section class="section news " id="news">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 d-flex">
+                <div class="news-card">
+                  <div class="news-card__img">
+                    <img src="img/card-1.png" alt="">
+                  </div>
+                  <div class="news-card__descr">
+                    <span class="news-date">03.02.2020</span>
+                    <h6 class="news-title">З нагоди відкриття нової автозаправки petronas компанія подарувала першому клієнту
+                      річний запас
+                      моторного мастила ...</h6>
+                    <p>
+                      Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
+                      Сенс використання Lorem Ipsum полягає в тому, що цей текст має більш-менш нормальне розподілення літер на
+                      відміну від, наприклад, "Тут іде текст. Тут іде текст." Це робить текст схожим на оповідний.
+                    </p>
+                    <a href="#">ЧИТАТИ <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.87499 7.89165L1 13.1495V14.3629L7 7.89165L1 1.42041V2.63376L5.87499 7.89165Z" fill="#029C99" stroke="#029C99" stroke-width="0.929"/>
+        </svg>
+        </a>
+                  </div>
+                </div>
+                <div class="news-card">
+                  <div class="news-card__img">
+                    <img src="img/card-2.png" alt="">
+                  </div>
+                  <div class="news-card__descr">
+                    <span class="news-date">03.02.2020</span>
+                    <h6 class="news-title">З нагоди відкриття нової автозаправки petronas компанія подарувала першому клієнту
+                      річний запас
+                      моторного мастила ...</h6>
+                    <p>
+                      Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
+                      Сенс використання Lorem Ipsum полягає в тому, що цей текст має більш-менш нормальне розподілення літер на
+                      відміну від, наприклад, "Тут іде текст. Тут іде текст." Це робить текст схожим на оповідний.
+                    </p>
+                    <a href="#">ЧИТАТИ <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.87499 7.89165L1 13.1495V14.3629L7 7.89165L1 1.42041V2.63376L5.87499 7.89165Z" fill="#029C99" stroke="#029C99" stroke-width="0.929"/>
+        </svg>
+        </a>
+                  </div>
+                </div>
+                <div class="news-card">
+                  <div class="news-card__img">
+                    <img src="img/card-3.png" alt="">
+                  </div>
+                  <div class="news-card__descr">
+                    <span class="news-date">03.02.2020</span>
+                    <h6 class="news-title">З нагоди відкриття нової автозаправки petronas компанія подарувала першому клієнту
+                      річний запас
+                      моторного мастила ...</h6>
+                    <p>
+                      Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
+                      Сенс використання Lorem Ipsum полягає в тому, що цей текст має більш-менш нормальне розподілення літер на
+                      відміну від, наприклад, "Тут іде текст. Тут іде текст." Це робить текст схожим на оповідний.
+                    </p>
+                    <a href="#">ЧИТАТИ <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.87499 7.89165L1 13.1495V14.3629L7 7.89165L1 1.42041V2.63376L5.87499 7.89165Z" fill="#029C99" stroke="#029C99" stroke-width="0.929"/>
+        </svg>
+        </a>
+                  </div>
+                </div>
+              
+              </div>
+              <div class="col-12 d-flex justify-content-center">
+                <a href="" class="btn">ВСІ НОВИНИ</a>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+        <!-- End name section -->        <!-- End news -->
+
+    </div>
+    <!--End page-->
+
+    <!-- Start footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <div>
+                    <h4>Partners</h4>
+                    <a href="#">Verlat Immo</a>
+                    <a href="#">24 Projects</a>
+                    <a href="#">YD Projects</a>
+                </div>
+                <div>
+                    <h4>Omgeving</h4>
+                    <a href="#">Boechout</a>
+                    <a href="#">Natuurpunt</a>
+                </div>
+                <div>
+                    <h4>Vremde7</h4>
+                    <a href="#">Plannen</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <div class="footer__row footer__row--bottom">
+                <a href="#" class="float-right fold">Crafted by FOLD.eu</a>
+            </div>
+        </div>
+    </footer>    <!-- End footer -->
+
+</div>
+<!-- End site wrapper -->
+<script type="text/javascript" src="bundle.js"></script></body>
+
+</html>
