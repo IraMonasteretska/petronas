@@ -139,18 +139,15 @@
                             </a>
                         </div>
                         <div class="header-select">
-                            <div class="select">
-                                <div class="select__field">
-                                    <input type="text" readonly placeholder="UA">
+    
+                            <div class="select-lg menu-item-has-children">
+                                    <span>UA</span>
+                                <div class="dropdown-menu-wrap">
+                                    <ul class="dropdown-menu select-lg__list">
+                                        <li class="select__option"><a href="#"> UA</a></li>
+                                        <li class="select__option"><a href="##">EN</a></li>
+                                    </ul>
                                 </div>
-                                <ul class="select__list">
-                                    <li class="select__option">
-                                        <a href="#"> UA </a>
-                                    </li>
-                                    <li class="select__option">
-                                        <a href="#"> EN </a>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                     </nav>
@@ -178,19 +175,19 @@
         
                 <div class="introduction__slider i-slider">
                   <div class="i-slider__item">
-                    <video width="100%" height="100%" loop muted preload="metadata">
+                    <video width="100%" height="100%" autoplay muted preload="metadata">
                       <source src="video/intro.mp4" type="video/mp4">
                     </video>
         
-                    <div class="video-control">
+                    <div class="video-control play">
         
                     </div>
                   </div>
                   <div class="i-slider__item">
-                    <img src="img/test-1x.png" data-src="img/test-1x.png" alt="">
+                    <img src="img/intro.png" data-src="img/intro.png" alt="">
                   </div>
                   <div class="i-slider__item">
-                    <img src="img/test-1x.png" data-src="img/test-1x.png" alt="">
+                    <img src="img/intro.png" data-src="img/intro.png" alt="">
                   </div>
                 </div>
               </div>
@@ -329,7 +326,7 @@
                           </div>
         
                           <div class="ds-picture">
-        
+                            <img src="img/s-1.png" alt="">
                           </div>
         
                         </div>
@@ -338,7 +335,6 @@
         
                           <div class="ds-descr">
                             <h3 class="title">ЗАХИСТ</h3>
-                            <p>Деталей двигуна від зношування & висока надійність, а також стабільність властивостей мастил</p>
                             <p>Деталей двигуна від зношування & висока надійність, а також стабільність властивостей мастил</p>
                           </div>
         
@@ -513,7 +509,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-none col-xl-4 col-xxl-3 col-fh-4 border-r">
+              <div class="col-none col-xl-4 col-xxl-3 col-fh-4">
                 &nbsp;
               </div>
             </div>
@@ -536,42 +532,55 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-6 col-lg-3 col-xl-4  col-xxl-3 col-fh-4  border-r border-t we-num-info-wrap">
-                    <div class="we-num-info">
-                      <div class="we-num-info__num">
-                        20+
+                  
+                  <div class="col-12 col-lg-6 col-xl-7 col-xxl-6 col-fh-7 no-padding">
+                    <div class="tab-row">
+                      <div class="tab-col border-r border-b">
+                        <div class="we-num-info">
+                          <div class="we-num-info__num">
+                            20+
+                          </div>
+                          <div class="we-num-info__descr">
+                            <p>нових технологій у виготовленні моторних, трансмійсійних та гідравлічних МАСТИЛ</p>
+                          </div>
+                        </div>
                       </div>
-                      <div class="we-num-info__descr">
-                        <p>нових технологій у виготовленні моторних, трансмійсійних та гідравлічних МАСТИЛ</p>
+                      <div class="tab-col border-b">
+                        <div class="we-num-info">
+                          <div class="we-num-info__num">
+                            2 млн
+                          </div>
+                          <div class="we-num-info__descr">
+                            <p>торгових операцій в день</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="we-num-info border-t">
-                      <div class="we-num-info__num">
-                        46
+                    <div class="tab-row">
+                      <div class="tab-col border-r">
+                        <div class="we-num-info border-t">
+                          <div class="we-num-info__num">
+                            46
+                          </div>
+                          <div class="we-num-info__descr">
+                            <p>років на ринку</p>
+                          </div>
+                        </div>
+        
                       </div>
-                      <div class="we-num-info__descr">
-                        <p>років на ринку</p>
+                      <div class="tab-col">
+                        <div class="we-num-info border-t">
+                          <div class="we-num-info__num">
+                            100%
+                          </div>
+                          <div class="we-num-info__descr">
+                            <p>гарантій якості</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-6 col-lg-3 col-xl-3 col-xxl-3 col-fh-3  border-t we-num-info-wrap">
-                    <div class="we-num-info">
-                      <div class="we-num-info__num">
-                        2 млн
-                      </div>
-                      <div class="we-num-info__descr">
-                        <p>торгових операцій в день</p>
-                      </div>
-                    </div>
-                    <div class="we-num-info border-t">
-                      <div class="we-num-info__num">
-                        100%
-                      </div>
-                      <div class="we-num-info__descr">
-                        <p>гарантій якості</p>
-                      </div>
-                    </div>
-                  </div>
+        
                 </div>
               </div>
         
@@ -598,16 +607,34 @@
                       </p>
                     </div>
                   </div>
-                  <div class="col-6 col-lg-3 col-xl-4  col-xxl-3 col-fh-4 border-t border-r partner-info-wrap">
-                    <div class="partner-info">
-                      <div class="partner-info__icon">
-                        <img src="img/japex.png" alt="">
+        
+                  <div class="col-12 col-lg-6 col-xl-7 col-xxl-6 col-fh-7 no-padding">
+                    <div class="tab-row">
+                      <div class="tab-col border-r border-b">
+        
+                        <div class="partner-info">
+                          <div class="partner-info__icon">
+                            <img src="img/japex.png" alt="">
+                          </div>
+                          <div class="partner-info__descr">
+                            <p>Japan Petroleum Exploration Company Limited</p>
+                          </div>
+                        </div>
                       </div>
-                      <div class="partner-info__descr">
-                        <p>Japan Petroleum Exploration Company Limited</p>
+                      <div class="tab-col border-b">
+                        <div class="partner-info">
+                          <div class="partner-info__icon">
+                            <img src="img/japex.png" alt="">
+                          </div>
+                          <div class="partner-info__descr">
+                            <p>Japan Petroleum Exploration Company Limited</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="partner-info border-t">
+                    <div class="tab-row">
+                      <div class="tab-col border-r">
+                       <div class="partner-info border-t">
                       <div class="partner-info__icon">
                         <img src="img/boc2.png" alt="">
                       </div>
@@ -615,20 +642,16 @@
                         <p>Basra Oil Company</p>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-6 col-lg-3 col-xl-3 col-xxl-3 col-fh-3  border-t partner-info-wrap">
-                    <div class="partner-info">
-                      <div class="partner-info__icon">
-                        <img src="img/japex.png" alt="">
+        
                       </div>
-                      <div class="partner-info__descr">
-                        <p>Japan Petroleum Exploration Company Limited</p>
+                      <div class="tab-col">
+                        <div class="partner-info border-t">
+                      <a href="#" class="btn">більше про нас</a>
+                    </div>
                       </div>
                     </div>
-                    <div class="partner-info border-t">
-                     <a href="#" class="btn">більше про нас</a>
-                    </div>
                   </div>
+        
                 </div>
               </div>
         
