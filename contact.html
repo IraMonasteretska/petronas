@@ -25,7 +25,7 @@
     <link rel="icon" href="img/favicon.ico" />
     <link rel="favicon" sizes="130x170" href="img/favicon130x170.png" />
     <!-- Template Basic Images End -->
-
+ <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- Custom Browsers Color Start -->
     <meta name="theme-color" content="#000" />
     <!-- Custom Browsers Color End -->
@@ -529,6 +529,11 @@
                   <input type="tel" name="tel" id="input-tel" placeholder="Номер телефону">
                   <input type="email" name="email" id="input-email" placeholder="*email">
                   <textarea name="massage" id="input-massage" cols="30" rows="5" placeholder="*повідомлення"></textarea>
+                  <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                  <div class="filter-checkbox">
+                    <input type="checkbox" id="checkbox-1">
+                    <label for="checkbox-1">Я погоджуюся з <span>правилами заповнення заявки</span></label>
+                  </div>
                   <input class="btn" type="submit" value="НАДІСЛАти">
                 </form>
               </div>
